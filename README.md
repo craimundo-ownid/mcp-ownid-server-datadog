@@ -1,12 +1,8 @@
 # Datadog MCP Server
 
-[![smithery badge](https://smithery.ai/badge/@winor30/mcp-server-datadog)](https://smithery.ai/server/@winor30/mcp-server-datadog)
+[![smithery badge](https://smithery.ai/badge/@craimundo-ownid/mcp-ownid-server-datadog)](https://smithery.ai/server/@craimundo-ownid/mcp-ownid-server-datadog)
 
 MCP server for the Datadog API, enabling incident management and more.
-
-<a href="https://glama.ai/mcp/servers/bu8gtzkwfr">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/bu8gtzkwfr/badge" alt="mcp-server-datadog MCP server" />
-</a>
 
 ## Features
 
@@ -174,7 +170,7 @@ export DATADOG_SITE="your_datadog_site"
 To install Datadog MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@winor30/mcp-server-datadog):
 
 ```bash
-npx -y @smithery/cli install @winor30/mcp-server-datadog --client claude
+npx -y @smithery/cli install @craimundo-ownid/mcp-ownid-server-datadog --client claude
 ```
 
 ### Manual Installation
@@ -228,7 +224,7 @@ Or specify via `npx`:
   "mcpServers": {
     "mcp-server-datadog": {
       "command": "npx",
-      "args": ["-y", "@winor30/mcp-server-datadog"],
+      "args": ["-y", "@craimundo-ownid/mcp-ownid-server-datadog"],
       "env": {
         "DATADOG_API_KEY": "<YOUR_API_KEY>",
         "DATADOG_APP_KEY": "<YOUR_APP_KEY>",
