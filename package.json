@@ -1,14 +1,14 @@
 {
-  "name": "@winor30/mcp-server-datadog",
+  "name": "@craimundo-ownid/mcp-ownid-server-datadog",
   "version": "1.2.0",
   "description": "MCP server for interacting with Datadog API",
   "repository": {
     "type": "git",
-    "url": "https://github.com/winor30/mcp-server-datadog.git"
+    "url": "https://github.com/craimundo-ownid/mcp-ownid-server-datadog.git"
   },
   "type": "module",
   "bin": {
-    "mcp-server-datadog": "./build/index.js"
+    "mcp-ownid-server-datadog": "./build/index.js"
   },
   "main": "build/index.js",
   "module": "build/index.js",
