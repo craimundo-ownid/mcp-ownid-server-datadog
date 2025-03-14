@@ -33,6 +33,7 @@ export const createLogsToolHandlers = (
             // `from` and `to` are in epoch seconds, but the Datadog API expects milliseconds
             from: `${from * 1000}`,
             to: `${to * 1000}`,
+            indexes: ['main'],
           },
           page: {
             limit,
