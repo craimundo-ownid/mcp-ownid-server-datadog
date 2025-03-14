@@ -22,7 +22,7 @@ export const createLogsToolHandlers = (
   const apiInstance = new v2.LogsApi(config)
   return {
     get_logs: async (request) => {
-      const { query, from, to, limit } = GetLogsZodSchema.parse(
+      const { query, from, to, limit, indexes } = GetLogsZodSchema.parse(
         request.params.arguments,
       )
 
@@ -33,7 +33,7 @@ export const createLogsToolHandlers = (
             // `from` and `to` are in epoch seconds, but the Datadog API expects milliseconds
             from: `${from * 1000}`,
             to: `${to * 1000}`,
-            indexes: ['main'],
+            indexes,
           },
           page: {
             limit,
